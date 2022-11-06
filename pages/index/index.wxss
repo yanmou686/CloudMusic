@@ -1,0 +1,126 @@
+/* pages/index/index.wxss */
+
+.banners {
+  width: 100%;
+  height: 300rpx;
+}
+
+.banners image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 五个图标导航区域 */
+.navContainer {
+  display: flex;
+}
+.navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}
+.navItem .iconfont {
+  background-color: red;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  font-size: 25px;
+  text-align: center;
+  line-height: 100rpx;
+  color: white;
+  margin: 20rpx 0;
+}
+.navItem text {
+  font-size: 26rpx;
+}
+
+/* 推荐歌曲头部区域 */
+.recommendContainer {
+  padding: 20rpx;
+}
+.recommendContainer .more {
+  float: right;
+  border: 1px solid black;
+  border-radius: 30rpx;
+  padding: 10rpx 20rpx;
+  font-size: 24rpx;
+}
+.recommendContainer .header .title {
+  font-size: 30rpx;
+  line-height: 80rpx;
+  color: #b2aeab;
+}
+
+/* 推荐歌曲内容区域 */
+.recommendScroll {
+  display: flex;
+  height: 300rpx;
+}
+.scrollItem {
+  width: 200rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+}
+.scrollItem image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+.recommendScroll .scrollItem text {
+  font-size: 26rpx;
+
+  /* 单行文本溢出隐藏 省略号代替*/
+  /*  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+
+  /* 多行文本溢出隐藏 省略号代替*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* 排行榜头部区域 */
+.topListSwiper {
+  height: 420rpx;
+}
+.swiperItem {
+  width: 96%;
+  background-color: #fbfbfb;
+}
+.topList {
+  padding: 20rpx;
+}
+/* 排行榜内容区域 */
+.swiperItem .title {
+  font-size: 30rpx;
+  line-height: 80rpx;
+}
+.swiperItem image {
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 6rpx;
+}
+.musicItem {
+  /* 当父元素设置为了flex，那么其子元素会自动变为block */
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.musicItem .count {
+  width: 60rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+.musicItem .musicName {
+  height: 100rpx;
+  width: 340rpx;
+  line-height: 100rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 8rpx;
+}

@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/recommendSongs/recommendSongs",
+    "pages/index/index",
+    "pages/songDetail/songDetail",
+    "pages/codeLogin/codeLogin",
+    "pages/video/video",
+    "pages/personl/personl",
+    "pages/login/login"
+  ],
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "window": {
+    "navigationBarBackgroundColor": "#fd544e",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "QQ云音乐",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/static/images/tabs/tab-home.png",
+        "selectedIconPath": "/static/images/tabs/tab-home-current.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "视频",
+        "iconPath": "/static/images/tabs/select.png",
+        "selectedIconPath": "/static/images/tabs/selected.png"
+      },
+      {
+        "pagePath": "pages/personl/personl",
+        "text": "我的",
+        "iconPath": "/static/images/tabs/tab-my.png",
+        "selectedIconPath": "/static/images/tabs/tab-my-current.png"
+      }
+    ],
+    "color": "#333",
+    "selectedColor": "d43c33",
+    "backgroundColor": "fff"
+  }
+}

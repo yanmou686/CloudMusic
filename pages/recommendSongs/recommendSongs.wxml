@@ -1,0 +1,38 @@
+<view class="recommendSongsContainer">
+  <view class="header">
+    <!-- 背景图片 -->
+    <image class="backgroundPhoto" src="/static/images/sl.jpg"> </image>
+    <!-- 显示日期 -->
+    <view class="data">
+      <text class="day" style="font-size: 92rpx">{{ day }}</text>
+      <text class="month">/{{ month }}</text>
+    </view>
+  </view>
+
+  <!-- 主要结构 -->
+  <view class="container">
+    <!-- 歌曲展示部分头部文字 -->
+    <view class="text">
+      <text class="leftText">播放全部</text>
+      <text class="more">多选</text>
+    </view>
+    <!-- 歌曲展示部分 -->
+    <scroll-view class="recommendScroll" enable-flex scroll-y>
+      <view
+        class="scrollItem"
+        wx:for="{{ recommendSongs }}"
+        wx:key="id"
+        bindtap="toSongDetail"
+        data-song="{{ item }}"
+        data-index="{{ index }}"
+      >
+        <image src="{{ item.al.picUrl }}"></image>
+        <view class="musicInfo">
+          <text class="songName" style="font-size: 30rpx">{{ item.name }}</text>
+          <text class="singer">{{ item.ar[0].name }}</text>
+        </view>
+        <text class="iconfont icon-diandian"></text>
+      </view>
+    </scroll-view>
+  </view>
+</view>

@@ -1,0 +1,97 @@
+.recommendSongsContainer {
+  position: relative;
+}
+
+.header {
+  height: 300rpx;
+  position: relative;
+}
+
+.header .backgroundPhoto {
+  width: 100%;
+  height: 480rpx;
+}
+
+.header .data {
+  position: absolute;
+  color: black;
+  font-size: 70rpx;
+  width: 300rpx;
+  height: 200rpx;
+  line-height: 200rpx;
+  text-align: center;
+  top: 35%;
+  left: 88%;
+  margin-left: -150rpx;
+  margin-top: -100rpx;
+  text-shadow: 5px 5px 5px black, 0px 0px 2px black;
+}
+
+.scrollItem {
+  padding-bottom: 20rpx;
+  display: flex;
+  margin: 0 20rpx;
+  position: relative;
+}
+
+.scrollItem image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 15rpx;
+}
+
+.container {
+  width: 100%;
+  background-color: white;
+  /* border: 1px solid black; */
+  position: absolute;
+  top: 280rpx;
+  border-radius: 50rpx 50rpx 0 0;
+}
+
+.leftText {
+  margin: 20rpx;
+  float: left;
+  font-size: 30rpx;
+}
+.more {
+  margin: 20rpx;
+  float: right;
+  font-size: 30rpx;
+}
+
+.songName {
+  height: 50rpx;
+}
+.singer {
+  height: 50rpx;
+}
+
+.musicInfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+
+.musicInfo text {
+  font-size: 22rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  max-width: 400rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.scrollItem .iconfont {
+  position: absolute;
+  height: 80rpx;
+  width: 80rpx;
+  line-height: 80rpx;
+  right: 0;
+  text-align: center;
+}
+
+.recommendScroll {
+  height: calc(100vh - 380rpx);
+}

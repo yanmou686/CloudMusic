@@ -1,0 +1,53 @@
+<view class="songDetailContainer">
+  <view class="bigImg">
+    <image class="bottomPic" src="{{ songDetail.al.picUrl }}"></image
+  ></view>
+  <view class="singer" style="font-size: 32rpx">{{ songDetail.name }}</view>
+  <view style="font-size: 24rpx">{{ songDetail.ar[0].name }}</view>
+  <view class="bottom"></view>
+  <image
+    class="needle  || {{ isPlay ? 'needleRotate' : '' }}"
+    src="/static/images/song/needle.png"
+  ></image>
+  <view class="discContainer && {{ isPlay ? 'discAnimation' : '' }}">
+    <image class="disc" src="/static/images/song/disc.png"></image>
+    <image class="musicImg" src="{{ songDetail.al.picUrl }}"></image>
+  </view>
+
+  <!-- 进度条控制区域 -->
+  <view class="progressControl">
+    <text style="font-size: 24rpx">{{ currentTime }}</text>
+    <!-- 总进度条 -->
+    <view class="barControl">
+      <!-- 实时进度条 -->
+      <view
+        class="audio-currentTime-Bar"
+        style="width: {{ currentWidth + 'rpx' }} "
+      >
+        <!-- 进度圆球 -->
+        <view class="audio-circle"></view
+      ></view>
+    </view>
+    <text style="font-size: 24rpx">{{ durationTime }}</text>
+  </view>
+
+  <!-- 底部控制区域 -->
+  <view class="musicControl">
+    <text class="iconfont icon-suijibofang"></text>
+    <text
+      class="iconfont icon-shangyishoushangyige"
+      bindtap="handleSwitch"
+      id="pre"
+    ></text>
+    <text
+      class="iconfont {{ isPlay ? 'icon-zanting' : 'icon-bofang1' }} Big"
+      bindtap="handleMusicPlay"
+    ></text>
+    <text
+      class="iconfont icon-xiayigexiayishou"
+      bindtap="handleSwitch"
+      id="next"
+    ></text>
+    <text class="iconfont icon-24gl-playlistMusic3"></text>
+  </view>
+</view>
